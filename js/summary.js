@@ -377,6 +377,7 @@ H5P.Summary = (function ($, Question, XApiEventBuilder, StopWatch) {
       }
 
       that.trigger('resize');
+      that.trigger('click', that);
       that.triggerXAPI('interacted');
 
       // Trigger answered xAPI event on first try for the current
